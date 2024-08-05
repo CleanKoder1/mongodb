@@ -223,7 +223,35 @@ db.contact.aggregate([
 		}	
 	  ]
 	)
-
+	db.movies.insertMany([
+		{
+			name: "Shrek",
+			genre: ["Comedy", "For Kids"],
+			cast: ["Mike Myers", "Eddie Murphy", "Cameron Diaz"],
+			movieDetails: {
+				yearRelease: 2001,
+				running Time: 90
+			}
+		},
+		{
+			name: "Shrek 2",
+			genre: ["Comedy", "For Kids"],
+			cast: ["Mike Myers", "Eddie Murphy", "Antonio Banderas"],
+			movieDetails: {
+				yearRelease: 2004,
+				running Time: 93
+			}
+		},
+		{
+			name: "Talk to me",
+			genre: ["Horror Film", "Supernatural"],
+			cast: ["Sophie Wilde", "Eddie Murphy", "Alexandra Jensen"],
+			movieDetails: {
+				yearRelease: 2022,
+				running Time: 95
+			}
+		},
+	])
 	db.items.insertOne({
 			name: "Shampoo",
 			price: 80,
